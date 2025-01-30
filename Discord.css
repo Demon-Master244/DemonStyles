@@ -1,5 +1,5 @@
 :root {
-  --version: "Frosted Glass Fix 1.0";
+  --version: "Frosted Glass 2.0.21";
   --TB-top: calc(var(--server-container) + var(--window-padding));
   --TB-tr-roundness: var(--window-roundness);
   --TB-position-top: var(--TB-top, var(--window-padding));
@@ -205,9 +205,9 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--background-image);
-  background-position: var(--background-image-position, center);
-  background-size: var(--background-image-size, cover);
+  background: var(--background-image) no-repeat;
+  background-position: var(--background-image-position, 15%);
+  background-size: var(--background-image-size, 105% 105%);
 }
 #app-mount .bg_d4b6c5::before {
   content: "";
@@ -217,8 +217,8 @@ textarea {
   bottom: var(--window-padding);
   left: var(--window-padding);
   border-radius: var(--window-roundness);
-  -webkit-backdrop-filter: blur(var(--background-image-blur));
-          backdrop-filter: blur(var(--background-image-blur));
+  -webkit-backdrop-filter: blur(var(--blur-bg)) brightness(var(--brightness-bg));
+          backdrop-filter: blur(var(--blur-bg)) brightness(var(--brightness-bg));
   box-shadow: inset 0 0 0 100vmax var(--tint);
   display: var(--background-blur-visiblity, block);
 }
