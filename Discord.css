@@ -201,13 +201,9 @@ textarea {
 }
 
 #app-mount .bg_d4b6c5 {
-  top: -22px;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background: var(--background-image) no-repeat;
-  background-position: var(--background-image-position, 15%);
-  background-size: var(--background-image-size, 105% 105%);
+  background-position: var(--background-image-position);
+  background-size: var(--background-image-size);
 }
 #app-mount .bg_d4b6c5::before {
   content: "";
